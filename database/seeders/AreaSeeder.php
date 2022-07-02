@@ -17,7 +17,7 @@ class AreaSeeder extends Seeder
      */
     public function run()
     {
-        $no_of_rows = 5;
+        $no_of_rows = 50;
         for( $i=0; $i < $no_of_rows; $i++ ){
             $area = array(
                 'name'    => Str::random(10),

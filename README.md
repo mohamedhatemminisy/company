@@ -65,7 +65,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Installation:
 
-- run `git clone https://gitlab.com/TechTrans/saas-webinars`
+- run `git clone https://github.com/mohamedhatemminisy/company.git`
 - copy `.env.example ` to `.env ` and set necessary configs
 - run `composer install` to install vendor packages
 - run `php artisan migrate --seed` to run database migrations
+- admin url `http://127.0.0.1:8000/admin/login`
+- username `admin@gmail.com`
+-password `123456789`

@@ -14,7 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
     Route::group([ 'middleware' => 'auth:admin', 'prefix' => 'admin'], function () {
         Route::get('/','App\Http\Controllers\Dashboard\DashboardController@index')->name('admin.dashboard');
+        Route::get('/category/create','App\Http\Controllers\Dashboard\CategoryController@create')->name('category.create');
+        Route::post('/category/store','App\Http\Controllers\Dashboard\CategoryController@store')->name('categories.store');
 
+        Route::resource('companies','App\Http\Controllers\Dashboard\CompanyController');
+        Route::post('/area','App\Http\Controllers\Dashboard\CompanyController@area')->name('get.area');
+        Route::delete('/destroy/{id}','App\Http\Controllers\Dashboard\CompanyController@image_destroy')->name('image.destroy');
+
+        
     });
 
     Route::group(['prefix' => 'admin/login'], function () {

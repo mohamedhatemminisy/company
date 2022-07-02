@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFilesTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateFilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('files', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('real_name')->nullable();
-            $table->string('extension')->nullable();
-            $table->string('url')->nullable();
-            $table->string('type')->nullable();
+            $table->string('image')->nullable();
             $table->integer('company_id')->unsigned();
             $table->foreign('company_id') ->references('id')->on('companies')->onDelete('cascade');
             $table->timestamps();
@@ -32,6 +29,6 @@ class CreateFilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('files');
+        Schema::dropIfExists('images');
     }
 }
