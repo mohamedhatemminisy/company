@@ -55,9 +55,11 @@ return [
     'files_saved'          => 'Your imaginary data is safe :)',
     'attendances'          => 'Attendances',
     'not_found'            => 'Not found',
+    'company'              => 'company',
     'detelted_sucess'      => 'Deleted successfully',
     'updated_sucess'       => 'Updated successfully',
     'try_again'            => 'Try again',
+    'companies'            => 'Companies',
     'attendances_type'     => 'Attended online or offline'
 
 ];

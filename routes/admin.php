@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 
     Route::group(['prefix' => 'admin/login'], function () {
         Route::get('/', 'App\Http\Controllers\Dashboard\LoginController@login')
-        ->name('admin.login');
+        ->name('login');
         Route::get('logout', 'App\Http\Controllers\Dashboard\LoginController@logout')->name('admin.logout');
         Route::post('/', 'App\Http\Controllers\Dashboard\LoginController@postLogin')
         ->name('admin.post.login');
