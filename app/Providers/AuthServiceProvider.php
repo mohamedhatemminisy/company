@@ -24,7 +24,11 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-
+        foreach (config('global.permissions') as $ability => $value) { 
+            Gate::define($ability, function ($auth) use ($ability) {
+                return $auth->hasAbility($ability);
+            });
+        }
         //
     }
 }

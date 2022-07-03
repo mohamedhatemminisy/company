@@ -70,5 +70,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - run `composer install` to install vendor packages
 - run `php artisan migrate --seed` to run database migrations
 - admin url `http://127.0.0.1:8000/admin/login`
+- admin access
 - username `admin@gmail.com`
--password `123456789`
+- password `123456789`
+- employee access
+- username `employee@gmail.com`
+- password `123456789`

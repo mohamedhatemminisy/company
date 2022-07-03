@@ -55,6 +55,7 @@ return [
     'files_saved'          => 'Your imaginary data is safe :)',
     'attendances'          => 'Attendances',
     'not_found'            => 'Not found',
+    'delete_row'           => 'Delete',
     'company'              => 'company',
     'detelted_sucess'      => 'Deleted successfully',
     'updated_sucess'       => 'Updated successfully',
